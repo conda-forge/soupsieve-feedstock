@@ -1,4 +1,4 @@
-{% set version = "1.7" %}
+{% set version = "1.7.1" %}
 
 package:
   name: soupsieve
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/soupsieve/soupsieve-{{ version }}.tar.gz
-  sha256: dff67354bff219f169ee634173c0148fcb0f7b23304ffddcfa2bb2f07accf30a
+  sha256: 009d8865916766f7f452880d08ff94ed4c5445011a3deaac67543b82bdb0b9ee
 
 build:
   number: 1000
