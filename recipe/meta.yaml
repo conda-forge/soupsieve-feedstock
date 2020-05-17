@@ -1,4 +1,4 @@
-{% set version = "1.9.4" %}
+{% set version = "2.0.1" %}
 
 package:
   name: soupsieve
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/soupsieve/soupsieve-{{ version }}.tar.gz
-  sha256: 605f89ad5fdbfefe30cdc293303665eff2d188865d4dbe4eb510bba1edfbfce3
+  sha256: a59dc181727e95d25f781f0eb4fd1825ff45590ec8ff49eadfd7f1a537cc0232
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -28,7 +28,7 @@ about:
   home: http://facelessuser.github.io/soupsieve
   license: MIT
   license_file: LICENSE.md
-  summary: A modern CSS selector implementation for BeautifulSoup 
+  summary: A modern CSS selector implementation for BeautifulSoup
 
 extra:
   recipe-maintainers:
