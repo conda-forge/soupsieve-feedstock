@@ -9,16 +9,16 @@ source:
   sha256: a59dc181727e95d25f781f0eb4fd1825ff45590ec8ff49eadfd7f1a537cc0232
 
 build:
-  number: 0
+  number: 1
+  noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.6
     - pip
   run:
-    - python
-    - backports.functools_lru_cache  # [py<33]
+    - python >=3.6
 
 test:
   imports:
