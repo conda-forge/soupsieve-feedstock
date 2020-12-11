@@ -5,11 +5,9 @@ Home: http://facelessuser.github.io/soupsieve
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/soupsieve-feedstock/blob/master/LICENSE.txt)
 
 Summary: A modern CSS selector implementation for BeautifulSoup
-
-
 
 Current build status
 ====================
