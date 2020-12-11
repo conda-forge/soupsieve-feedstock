@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.1" %}
 
 package:
   name: soupsieve
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/soupsieve/soupsieve-{{ version }}.tar.gz
-  sha256: a59dc181727e95d25f781f0eb4fd1825ff45590ec8ff49eadfd7f1a537cc0232
+  sha256: 6dc52924dc0bc710a5d16794e6b3480b2c7c08b07729505feab2b2c16661ff6e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
