@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.3" %}
 
 package:
   name: soupsieve
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/soupsieve/soupsieve-{{ version }}.tar.gz
-  sha256: a59dc181727e95d25f781f0eb4fd1825ff45590ec8ff49eadfd7f1a537cc0232
+  sha256: e4860f889dfa88774c07da0b276b70c073b6470fa1a4a8350800bb7bce3dcc76
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -21,6 +21,8 @@ requirements:
     - python >=3.6
 
 test:
+  requires:
+    - beautifulsoup4
   imports:
     - soupsieve
 
