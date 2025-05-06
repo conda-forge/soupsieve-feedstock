@@ -15,15 +15,16 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.8
+    - python >={{ python_min }}
 
 test:
   requires:
     - beautifulsoup4
+    - python {{ python_min }}
   imports:
     - soupsieve
 
@@ -35,4 +36,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - MementoRC
     - jschueller
