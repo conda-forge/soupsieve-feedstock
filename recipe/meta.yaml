@@ -1,4 +1,4 @@
-{% set version = "2.5" %}
+{% set version = "2.6" %}
 
 package:
   name: soupsieve
@@ -9,7 +9,7 @@ source:
   sha256: 5663d5a7b3bfaeee0bc4372e7fc48f9cff4940b3eec54a6451cc5299f1097690
 
 build:
-  number: 2
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -36,4 +36,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - MementoRC
     - jschueller
