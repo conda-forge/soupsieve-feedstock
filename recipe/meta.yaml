@@ -1,4 +1,4 @@
-{% set version = "3.0.2" %}
+{% set version = "3.0.3" %}
 
 package:
   name: soupsieve
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/s/soupsieve/soupsieve-{{ version }}.tar.gz
-  sha256: 841ce01c8e80b3bf95c2f2657f191b024be1cdd9d6c0d24a663af247da81911a
+  sha256: 7dcf6022eed0399eb9934a75e020148f7a2024c37b7dfcd3cf2c5505d69c364e
 
 build:
   number: 0
